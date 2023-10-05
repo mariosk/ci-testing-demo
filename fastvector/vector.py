@@ -101,7 +101,7 @@ class Vector2D:
         """
         if not isinstance(other_vector, Vector2D):
             raise TypeError("You must pass in a Vector2D instance!")
-        x_axis = self.x_axis + other_vector.x_axis
+        x_axis = self.x_axis + other_vector.x_axis +1 
         y_axis = self.y_axis + other_vector.y_axis
         return Vector2D(x_axis, y_axis)
 
