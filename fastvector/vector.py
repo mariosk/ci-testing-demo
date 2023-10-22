@@ -158,4 +158,6 @@ class Vector2D:
         """
         if not isinstance(other, numbers.Real):
             raise TypeError("You must pass in an int/float!")
+        if other == 0:
+            raise ValueError("Division by zero!")
         return Vector2D(self.x_axis / other, self.y_axis / other)

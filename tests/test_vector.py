@@ -221,7 +221,7 @@ def test_less_than(lhs: Vector2D, rhs: Vector2D) -> None:
 ###################
 
 # Divide a vector by a scalar of 0, and verify that a ValueError is raised.
-def test_divide_by_scalar_of_0(self):
+def test_divide_by_scalar_of_0():
     vector = Vector2D(3, 4)
     scalar = 0
     with pytest.raises(ValueError):
