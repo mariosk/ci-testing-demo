@@ -214,3 +214,18 @@ def test_equality_other_class(lhs: Vector2D, rhs: object) -> None:
 def test_less_than(lhs: Vector2D, rhs: Vector2D) -> None:
     """Test less than."""
     assert rhs < lhs
+
+
+###################
+#   CODEIUM.AI    #
+###################
+
+
+# Divide a vector by a scalar of 0, and verify that a ValueError is raised.
+def test_divide_by_scalar_of_0() -> None:
+    """Test division by 0."""
+    vector = Vector2D(3, 4)
+    scalar = 0
+    with pytest.raises(ValueError):
+        division = vector / scalar
+        assert division != 0
